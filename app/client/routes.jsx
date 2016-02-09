@@ -18,6 +18,26 @@ FlowRouter.route("/login", {
     }
 });
 
+FlowRouter.route("/Contact", {
+    name: "Contact",
+    subscriptions(params) {
+
+    },
+    action(params) {
+        renderMainLayoutWith(<C.Contact />);
+    }
+});
+
+FlowRouter.route("/gallery", {
+    name: 'Gallery',
+    subscriptions(params) {
+
+    },
+    action(params) {
+        renderMainLayoutWith(<C.Gallery />);
+    }
+});
+
 function renderMainLayoutWith(component) {
     ReactLayout.render(C.MainLayout, {
         header: <C.MainHeader />,
