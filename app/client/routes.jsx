@@ -37,7 +37,15 @@ FlowRouter.route("/gallery", {
         renderMainLayoutWith(<C.Gallery />);
     }
 });
+FlowRouter.route("/DDD", {
+    name: 'DDD',
+    subscriptions(params) {
 
+    },
+    action(params) {
+        renderMainLayoutWith(<C.DDD />);
+    }
+});
 function renderMainLayoutWith(component) {
     ReactLayout.render(C.MainLayout, {
         header: <C.MainHeader />,

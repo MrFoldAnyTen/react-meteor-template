@@ -9,6 +9,7 @@ C.MainHeader = React.createClass({
         Meteor.logout();
     },
     render() {
+
         let loginButton;
         let { currentUser } = this.data;
 
@@ -28,7 +29,7 @@ C.MainHeader = React.createClass({
                     <div className="navbar-header">
                         <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span className="sr-only">Toggle navigation</span>
-                            <span className="icon-bar"></span> 
+                            <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                         </button>
@@ -39,10 +40,13 @@ C.MainHeader = React.createClass({
                         <ul className="nav navbar-nav navbar-right">
                             <li><a href="/">Home</a></li>
                             <li><a href="/Gallery">Gallery</a></li>
+                            <li><a href="/DDD">DDD</a></li>
                             <li><a href="/Contact">Contact</a></li>
+
                             {loginButton}
                         </ul>
                     </div>
+                    
                 </div>
             </nav>
         )
